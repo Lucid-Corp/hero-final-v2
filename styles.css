@@ -1391,13 +1391,12 @@ body {
 .v4-right {
   flex: 0 0 52%;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: stretch;
+  justify-content: flex-start;
   position: relative;
   z-index: 2;
-  padding: calc(var(--nav-h) + 10px) 2% 0 0;
+  padding: calc(var(--nav-h) + 10px) 2% 108px 0;
   overflow: visible;
-  justify-content: flex-start;
 }
 
 /* Eyebrow */
@@ -1533,14 +1532,15 @@ body {
 /* Tray image */
 .v4-img-wrap {
   position: relative;
-  flex-shrink: 0;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
 }
 
 .v4-tray-img {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 700px;
+  height: 100%;
   object-fit: contain;
   object-position: left top;
   opacity: 0;
