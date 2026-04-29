@@ -1553,6 +1553,47 @@ body {
   white-space: nowrap;
 }
 
+/* Category cards */
+.v4-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+  max-width: 420px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards 0.6s;
+}
+.v4-cat {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+}
+.v4-cat strong {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  white-space: nowrap;
+}
+.v4-cat span {
+  font-size: 11px;
+  color: rgba(0,0,0,0.5);
+  line-height: 1.4;
+}
+.v4-cat a {
+  font-size: 12px;
+  color: #0071e3;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.v4-cat a:hover { text-decoration: underline; }
+
 /* Tray image */
 .v4-img-wrap {
   position: relative;
