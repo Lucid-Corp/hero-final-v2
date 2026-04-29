@@ -1396,7 +1396,8 @@ body {
   justify-content: center;
   position: relative;
   z-index: 2;
-  padding: calc(var(--nav-h) + 20px) 3% 80px 2%;
+  padding: calc(var(--nav-h) + 20px) 4% 0 2%;
+  overflow: hidden;
 }
 
 /* Eyebrow */
@@ -1532,15 +1533,21 @@ body {
 /* Tray image */
 .v4-img-wrap {
   position: relative;
-  display: inline-flex;
+  display: inline-block;
+  width: 420px;
+  height: 100%;
+  min-height: 580px;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.18);
 }
 
 .v4-tray-img {
   width: 100%;
-  max-width: 560px;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
   display: block;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.18));
   opacity: 0;
   animation: fadeUp 0.8s ease forwards 0.4s;
 }
