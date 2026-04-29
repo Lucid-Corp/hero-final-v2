@@ -1392,11 +1392,11 @@ body {
 .v4-right {
   flex: 0 0 52%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   z-index: 2;
-  padding: calc(var(--nav-h) + 20px) 4% 0 2%;
+  padding: calc(var(--nav-h) + 120px) 4% 0 2%;
   overflow: hidden;
 }
 
@@ -1539,7 +1539,7 @@ body {
 .v4-tray-img {
   display: block;
   width: auto;
-  height: 580px;
+  height: 700px;
   max-width: 100%;
   object-fit: contain;
   opacity: 0;
