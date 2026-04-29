@@ -1528,7 +1528,7 @@ body {
   padding: 14px 16px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   text-align: center;
-  height: 110px;
+  height: 80px;
   box-sizing: border-box;
 }
 
@@ -1593,7 +1593,7 @@ body {
   flex-direction: column;
   gap: 4px;
   text-align: center;
-  height: 110px;
+  height: 80px;
   box-sizing: border-box;
 }
 .v4-cat strong {
