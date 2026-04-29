@@ -1597,6 +1597,8 @@ body {
   line-height: 1.4;
   white-space: normal;
   overflow-wrap: break-word;
+  word-break: break-word;
+  min-height: calc(11px * 1.4 * 2);
 }
 .v4-cat a {
   font-size: 12px;
