@@ -1382,7 +1382,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: calc(var(--nav-h) - 5px) 5% 60px 6%;
+  padding: calc(var(--nav-h) + 20px) 5% 60px 6%;
   position: relative;
   z-index: 2;
 }
