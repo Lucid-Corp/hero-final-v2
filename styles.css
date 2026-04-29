@@ -1396,7 +1396,7 @@ body {
   justify-content: center;
   position: relative;
   z-index: 2;
-  padding: calc(var(--nav-h) + 120px) 4% 0 2%;
+  padding: calc(var(--nav-h) + 48px) 4% 0 2%;
   overflow: hidden;
 }
 
