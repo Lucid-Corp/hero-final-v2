@@ -1381,8 +1381,8 @@ body {
   flex: 0 0 48%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: calc(var(--nav-h) + 48px) 5% 60px 6%;
+  justify-content: flex-start;
+  padding: calc(var(--nav-h) + 10px) 5% 60px 6%;
   position: relative;
   z-index: 2;
 }
