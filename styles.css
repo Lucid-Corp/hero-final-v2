@@ -1484,9 +1484,9 @@ body {
   animation: glassExpand 0.7s cubic-bezier(0.34,1.56,0.64,1) forwards 0.35s;
 }
 @keyframes glassExpand {
-  0%   { opacity: 0; width: 50px; }
+  0%   { opacity: 0; transform: scaleX(0.25); }
   30%  { opacity: 1; }
-  100% { opacity: 1; width: 205px; }
+  100% { opacity: 1; transform: scaleX(1); }
 }
 .v4-glass-btn:hover {
   box-shadow:
