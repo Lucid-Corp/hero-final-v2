@@ -1545,12 +1545,9 @@ body {
   font-size: 11px;
   color: rgba(0,0,0,0.5);
   line-height: 1.4;
-  white-space: normal;
-  overflow-wrap: break-word;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .v4-ben-link {
