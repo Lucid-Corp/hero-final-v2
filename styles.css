@@ -1554,12 +1554,23 @@ body {
 }
 
 /* Category cards */
+.v4-cat-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  color: #0071e3;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards 0.55s;
+}
 .v4-categories {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 12px;
-  max-width: 420px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 0;
+  max-width: 100%;
   opacity: 0;
   animation: fadeUp 0.6s ease forwards 0.6s;
 }
