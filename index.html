@@ -9,7 +9,7 @@
 <body>
 
   <!-- NAV -->
-  <nav class="nav" id="navbar">
+  <nav class="nav v4-nav" id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
         <img src="assets/logo.svg" alt="Lucid Corp" class="nav-logo-img" />
@@ -36,67 +36,101 @@
     </div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-eyebrow">Introducing Lucid Infinity™</div>
-    <h1 class="hero-headline">The future of<br>food packaging.</h1>
-    <p class="hero-sub">Pad-less. Leak-resistant. 100% recyclable.<br>Redefining how protein reaches your table.</p>
-    <div class="hero-actions">
-      <a href="#products" class="btn-primary">Explore products</a>
-      <a href="#sustainability" class="btn-ghost">Our sustainability mission ›</a>
+  <!-- HERO V4 — Dark Split -->
+  <section class="hero v4-hero">
+    <!-- Left: Text side -->
+    <div class="v4-left">
+      <span class="v4-eyebrow">Introducing Lucid Infinity™</span>
+      <h1 class="v4-headline">We solved the<br>world's largest<br>packaging problem.</h1>
+      <p class="v4-sub">50 billion soaker pads dumped into landfills every year.<br>We built the pad-less alternative.</p>
+      <div class="v4-chips">
+        <span class="v4-chip">✓ 100% Recyclable PET</span>
+        <span class="v4-chip">✓ Pad-less</span>
+        <span class="v4-chip">✓ Leak-resistant</span>
+        <span class="v4-chip">✓ Patented</span>
+      </div>
+      <div class="v4-actions">
+        <a href="#products" class="v4-btn-primary">Explore products</a>
+        <a href="#sustainability" class="v4-btn-ghost">Sustainability mission ›</a>
+      </div>
+      <!-- Benefit cards stacked vertically -->
+      <div class="v4-benefits">
+        <div class="v4-benefit">
+          <img src="assets/Icons/sustainability.png" class="v4-ben-icon" alt="" />
+          <div>
+            <strong>Sustainability</strong>
+            <span>100% recyclable. No adoption required.</span>
+          </div>
+        </div>
+        <div class="v4-benefit">
+          <img src="assets/Icons/consumer-exp.png" class="v4-ben-icon" alt="" />
+          <div>
+            <strong>Consumer Experience</strong>
+            <span>No pads, no disgust, no gloves.</span>
+          </div>
+        </div>
+        <div class="v4-benefit">
+          <img src="assets/Icons/merchandising.png" class="v4-ben-icon" alt="" />
+          <div>
+            <strong>Merchandising</strong>
+            <span>Pad-less design drives shelf appeal.</span>
+          </div>
+        </div>
+        <div class="v4-benefit">
+          <img src="assets/Icons/recycling.png" class="v4-ben-icon" alt="" />
+          <div>
+            <strong>Post-Consumer Recycled</strong>
+            <span>One material. Infinite recycling loops.</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="hero-slider">
-      <div class="hero-slide active">
-        <img src="assets/tray1.png" alt="Lucid Infinity chicken breast tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/tray2.png" alt="Lucid Infinity chicken breast side view" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/tray3.png" alt="Lucid Infinity chicken thigh tray" />
-      </div>
-      <div class="hero-slide">
-        <img src="assets/tray4.png" alt="Lucid Infinity tray" />
-      </div>
-      <div class="hero-slider-dots">
-        <button class="slider-dot active" data-index="0"></button>
-        <button class="slider-dot" data-index="1"></button>
-        <button class="slider-dot" data-index="2"></button>
-        <button class="slider-dot" data-index="3"></button>
-      </div>
-    </div>
-  </section>
 
-  <!-- KEY BENEFITS ROW -->
-  <section class="benefits-row">
-    <div class="benefits-inner">
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <img src="assets/icons/sustainability.png" alt="Sustainability" />
+    <!-- Right: Image side -->
+    <div class="v4-right">
+      <div class="v4-img-wrap">
+        <img src="assets/tray1.png" class="v4-tray-img" alt="Lucid Infinity tray" />
+        <!-- Floating stat badges -->
+        <div class="v4-badge v4-badge-1">
+          <span class="v4-badge-num">50B</span>
+          <span class="v4-badge-label">pads/yr eliminated</span>
         </div>
-        <h4>Sustainability</h4>
-        <p>100% recyclable PET.<br>No consumer adoption required.</p>
+        <div class="v4-badge v4-badge-2">
+          <span class="v4-badge-num">100%</span>
+          <span class="v4-badge-label">recyclable PET</span>
+        </div>
+        <div class="v4-badge v4-badge-3">
+          <span class="v4-badge-num">0</span>
+          <span class="v4-badge-label">absorbent pads</span>
+        </div>
       </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <img src="assets/icons/consumer-exp.png" alt="Consumer Experience" />
+    </div>
+
+    <!-- Marquee at bottom -->
+    <div class="v4-marquee">
+      <div class="v4-marquee-track">
+        <div class="v4-marquee-set">
+          <span class="v4-marquee-brand">LUCID INFINITY™:</span>
+          <span>Zero Soaker Pads</span><span class="dot">·</span>
+          <span>100% Recyclable</span><span class="dot">·</span>
+          <span>rPET &amp; Ocean-Bound Plastics</span><span class="dot">·</span>
+          <span>30+ Years Experience</span><span class="dot">·</span>
+          <span>Brampton, Ontario</span><span class="dot">·</span>
+          <span>Vertically Integrated</span><span class="dot">·</span>
+          <span>In-House Tooling &amp; Design</span><span class="dot">·</span>
+          <span>Never Out-of-Stock</span><span class="dot">·</span>
         </div>
-        <h4>Consumer Experience</h4>
-        <p>No pads, no disgust,<br>no gloves.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <img src="assets/icons/merchandising.png" alt="Merchandising" />
+        <div class="v4-marquee-set" aria-hidden="true">
+          <span class="v4-marquee-brand">LUCID INFINITY™:</span>
+          <span>Zero Soaker Pads</span><span class="dot">·</span>
+          <span>100% Recyclable</span><span class="dot">·</span>
+          <span>rPET &amp; Ocean-Bound Plastics</span><span class="dot">·</span>
+          <span>30+ Years Experience</span><span class="dot">·</span>
+          <span>Brampton, Ontario</span><span class="dot">·</span>
+          <span>Vertically Integrated</span><span class="dot">·</span>
+          <span>In-House Tooling &amp; Design</span><span class="dot">·</span>
+          <span>Never Out-of-Stock</span><span class="dot">·</span>
         </div>
-        <h4>Merchandising</h4>
-        <p>Pad-less design drives shelf appeal<br>&amp; impulse sales.</p>
-      </div>
-      <div class="benefit-card">
-        <div class="benefit-icon">
-          <img src="assets/icons/recycling.png" alt="Post-Consumer Recycled" />
-        </div>
-        <h4>Post-Consumer Recycled</h4>
-        <p>One material.<br>Infinite recycling loops.</p>
       </div>
     </div>
   </section>
