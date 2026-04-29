@@ -1362,7 +1362,7 @@ body {
   padding: 0 !important;
   text-align: left !important;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Subtle background glow */
@@ -1538,10 +1538,11 @@ body {
 
 .v4-tray-img {
   display: block;
-  width: auto;
-  height: 700px;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
+  max-height: 700px;
   object-fit: contain;
+  object-position: left top;
   opacity: 0;
   animation: fadeUp 0.8s ease forwards 0.4s;
 }
