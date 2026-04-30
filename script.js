@@ -95,3 +95,15 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -55% 0px' });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// Hero tray auto-slider
+(function() {
+  const slides = document.querySelectorAll('.v4-slide');
+  if (!slides.length) return;
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }, 3000);
+})();
