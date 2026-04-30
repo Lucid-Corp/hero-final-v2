@@ -95,3 +95,17 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -55% 0px' });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// Align v4-marquee with bottom of tray image
+function alignMarqueeToTray() {
+  const tray = document.querySelector('.v4-tray-img');
+  const marquee = document.querySelector('.v4-marquee');
+  const hero = document.querySelector('.v4-hero');
+  if (!tray || !marquee || !hero) return;
+  const trayBottom = tray.getBoundingClientRect().bottom - hero.getBoundingClientRect().top;
+  marquee.style.top = trayBottom + 'px';
+  marquee.style.bottom = 'auto';
+}
+
+window.addEventListener('load', alignMarqueeToTray);
+window.addEventListener('resize', alignMarqueeToTray);
