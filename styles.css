@@ -1666,7 +1666,7 @@ body {
 .v4-tray-img {
   display: block;
   width: auto;
-  height: 33vh;
+  height: 60%;
   max-width: 100%;
   object-fit: contain;
   object-position: left top;
@@ -1772,7 +1772,7 @@ body {
 
 .v4-marquee {
   position: absolute;
-  top: calc(var(--nav-h) + 33vh + 10px); left: 0; right: 0;
+  top: 0; left: 0; right: 0;
   background: rgba(0,0,0,0.75);
   border-top: 1px solid rgba(0,0,0,0.1);
   overflow: hidden;
