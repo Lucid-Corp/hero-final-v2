@@ -1663,6 +1663,7 @@ body {
   width: auto;
   height: 42vh;
   max-width: 100%;
+  margin-left: -40px;
   object-fit: contain;
   object-position: left top;
   opacity: 0;
