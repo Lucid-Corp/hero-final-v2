@@ -109,3 +109,10 @@ function alignMarqueeToTray() {
 
 window.addEventListener('load', alignMarqueeToTray);
 window.addEventListener('resize', alignMarqueeToTray);
+
+// Re-run once tray image has loaded (dimensions finalized)
+const trayImg = document.querySelector('.v4-tray-img');
+if (trayImg) {
+  if (trayImg.complete) { alignMarqueeToTray(); }
+  else { trayImg.addEventListener('load', alignMarqueeToTray); }
+}
