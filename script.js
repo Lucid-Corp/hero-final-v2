@@ -95,3 +95,29 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -55% 0px' });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// Pin marquee to bottom of tray image
+function alignMarqueeToTray() {
+  const tray = document.querySelector('.v4-tray-img');
+  const marquee = document.querySelector('.v4-marquee');
+  const hero = document.querySelector('.v4-hero');
+  if (!tray || !marquee || !hero) return;
+  requestAnimationFrame(() => {
+    const heroTop = hero.getBoundingClientRect().top + window.scrollY;
+    const trayBottom = tray.getBoundingClientRect().bottom + window.scrollY;
+    marquee.style.top = (trayBottom - heroTop) + 'px';
+    marquee.style.bottom = 'auto';
+  });
+}
+
+window.addEventListener('load', () => {
+  alignMarqueeToTray();
+  setTimeout(alignMarqueeToTray, 400);
+});
+window.addEventListener('resize', alignMarqueeToTray);
+
+const _trayImg = document.querySelector('.v4-tray-img');
+if (_trayImg) {
+  if (_trayImg.complete) alignMarqueeToTray();
+  else _trayImg.addEventListener('load', alignMarqueeToTray);
+}
