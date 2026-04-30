@@ -1348,78 +1348,87 @@ body {
 }
 
 /* ============================================================
-   V4 — Dark Split Hero
+   V2 — White Centered Design (hero-final-v2)
    ============================================================ */
 
-/* Override base hero for V4 */
+/* Override base hero for V2 */
 .v4-hero {
   min-height: 0;
   height: auto;
-  background: linear-gradient(160deg, #e8e8e8 0%, #f0f0f0 50%, #dcdcdc 100%);
+  background: #ffffff;
   display: flex !important;
-  flex-direction: row !important;
-  align-items: stretch !important;
+  flex-direction: column !important;
+  align-items: center !important;
   justify-content: flex-start !important;
-  padding: 0 0 20px !important;
-  text-align: left !important;
+  padding: calc(var(--nav-h) + 64px) 40px 0 !important;
+  text-align: center !important;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
 }
 
-/* Subtle background glow */
+/* Subtle centered glow */
 .v4-hero::before {
   content: '';
   position: absolute;
-  width: 700px; height: 700px;
-  background: radial-gradient(circle, rgba(0,113,227,0.06) 0%, transparent 65%);
-  top: 10%; right: 5%;
+  width: 960px; height: 480px;
+  background: radial-gradient(ellipse, rgba(0,113,227,0.06) 0%, transparent 70%);
+  top: 0; left: 50%;
+  transform: translateX(-50%);
   pointer-events: none;
   z-index: 0;
 }
 
-/* Left panel */
+/* Top text block — centered column */
 .v4-left {
-  flex: 0 0 48%;
+  flex: none !important;
+  width: 100%;
+  max-width: 720px;
   display: flex;
   flex-direction: column;
+  align-items: center !important;
   justify-content: flex-start;
-  padding: calc(var(--nav-h) + 80px) 5% 60px 6%;
+  padding: 0 0 36px !important;
+  text-align: center;
   position: relative;
   z-index: 2;
 }
 
-/* Right panel */
+/* Carousel block — centered, full width */
 .v4-right {
-  flex: 0 0 52%;
+  flex: none !important;
+  width: 100%;
+  max-width: 900px;
   display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
+  align-items: center !important;
+  justify-content: center !important;
   position: relative;
   z-index: 2;
-  padding: calc(var(--nav-h) + 80px) 2% 48px 0;
+  padding: 0 !important;
   overflow: visible;
 }
 
 /* Eyebrow */
 .v4-eyebrow {
   display: inline-block;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #0071e3;
   margin-bottom: 20px;
+  text-align: center;
   opacity: 0;
   animation: fadeUp 0.5s ease forwards 0.1s;
 }
 
 /* Headline */
 .v4-headline {
-  font-size: clamp(32px, 3.8vw, 58px);
+  font-size: clamp(36px, 5vw, 72px);
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.04;
   letter-spacing: -0.03em;
   color: #1a1a1a;
+  text-align: center;
   margin-bottom: 18px;
   opacity: 0;
   animation: fadeUp 0.6s ease forwards 0.2s;
@@ -1427,11 +1436,14 @@ body {
 
 /* Subtext */
 .v4-sub {
-  font-size: 15px;
+  font-size: 17px;
   color: rgba(0,0,0,0.5);
-  line-height: 1.65;
-  margin-bottom: 24px;
-  max-width: 440px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 520px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   opacity: 0;
   animation: fadeUp 0.6s ease forwards 0.3s;
 }
@@ -1441,23 +1453,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 28px;
+  margin-bottom: 0;
+  justify-content: center;
   opacity: 0;
   animation: fadeUp 0.6s ease forwards 0.35s;
 }
 
 .v4-chip {
   display: inline-block;
-  background: #0071e3;
-  border: 1px solid #0071e3;
+  background: transparent;
+  border: 1.5px solid #0071e3;
   border-radius: 980px;
-  padding: 5px 14px;
-  font-size: 12px;
-  color: #ffffff;
+  padding: 6px 16px;
+  font-size: 13px;
+  color: #0071e3;
   white-space: nowrap;
+  font-weight: 500;
 }
 .v4-chip-check {
-  color: #ffffff;
+  color: #0071e3;
   font-weight: 700;
 }
 .v4-glass-btn {
@@ -1545,14 +1559,17 @@ body {
 }
 .v4-btn-ghost:hover { opacity: 0.75; }
 
-/* Vertical benefit list */
+/* Full-width 4-column benefit strip */
 .v4-benefits {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 1100px;
+  padding: 36px 0 48px !important;
   opacity: 0;
-  animation: fadeUp 0.6s ease forwards 0.5s;
-  max-width: 420px;
+  animation: fadeUp 0.6s ease forwards 0.6s;
+  box-sizing: border-box;
 }
 
 .v4-benefit {
@@ -1560,33 +1577,39 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  background: rgba(255,255,255,0.75);
-  border: 1px solid rgba(0,0,0,0.08);
-  border-radius: 12px;
-  padding: 14px 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  gap: 6px;
+  background: #f5f5f7;
+  border: none;
+  border-radius: 16px;
+  padding: 22px 18px;
+  box-shadow: none;
   text-align: center;
-  height: 80px;
+  height: auto;
+  min-height: 90px;
   box-sizing: border-box;
+  transition: background 0.2s;
+}
+
+.v4-benefit:hover {
+  background: #ebebed;
 }
 
 .v4-benefit strong {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   color: #1a1a1a;
-  margin-bottom: 2px;
-  white-space: nowrap;
+  margin-bottom: 4px;
+  white-space: normal;
 }
 
 .v4-benefit span {
-  font-size: 11px;
+  font-size: 12px;
   color: rgba(0,0,0,0.5);
-  line-height: 1.4;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.5;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
 }
 
 .v4-ben-link {
@@ -1659,29 +1682,34 @@ body {
 /* Tray image */
 .v4-img-wrap {
   position: relative;
-  flex: 1;
+  flex: none;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .v4-tray-slider {
   position: relative;
-  height: 42vh;
-  margin-left: -80px;
+  height: 52vh;
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .v4-tray-img {
   display: block;
   width: auto;
-  height: 42vh;
+  height: 52vh;
   max-width: 100%;
   object-fit: contain;
-  object-position: left top;
+  object-position: center center;
 }
 
 .v4-slide {
   position: absolute;
-  top: 0; left: 0;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
   opacity: 0;
   transition: opacity 0.9s ease;
 }
@@ -1689,6 +1717,7 @@ body {
 .v4-slide.active {
   opacity: 1;
   position: relative;
+  transform: none;
 }
 
 /* Floating stat badges */
@@ -1832,7 +1861,8 @@ body {
   border-bottom-color: rgba(0,0,0,0.08) !important;
 }
 .v4-nav .nav-inner {
-  max-width: 100%;
-  padding-left: 6%;
-  padding-right: 4%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
 }
