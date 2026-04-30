@@ -544,10 +544,10 @@ body {
   padding: 0 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.services-slider-header .eyebrow { margin-bottom: 0; }
+.services-slider-header .eyebrow { margin-bottom: 0; font-weight: 800; text-align: center; }
 
 .services-slider-nav {
   display: flex;
