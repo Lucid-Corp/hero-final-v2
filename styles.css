@@ -1658,16 +1658,31 @@ body {
   align-items: flex-start;
 }
 
+.v4-tray-slider {
+  position: relative;
+  height: 42vh;
+  margin-left: -40px;
+}
+
 .v4-tray-img {
   display: block;
   width: auto;
   height: 42vh;
   max-width: 100%;
-  margin-left: -40px;
   object-fit: contain;
   object-position: left top;
+}
+
+.v4-slide {
+  position: absolute;
+  top: 0; left: 0;
   opacity: 0;
-  animation: fadeUp 0.8s ease forwards 0.4s;
+  transition: opacity 0.9s ease;
+}
+
+.v4-slide.active {
+  opacity: 1;
+  position: relative;
 }
 
 /* Floating stat badges */
