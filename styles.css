@@ -1360,7 +1360,7 @@ body {
   flex-direction: column !important;
   align-items: center !important;
   justify-content: flex-start !important;
-  padding: calc(var(--nav-h) + 64px) 40px 0 !important;
+  padding: calc(var(--nav-h) + 28px) 40px 0 !important;
   text-align: center !important;
   position: relative;
   overflow: hidden;
@@ -1693,9 +1693,8 @@ body {
 .v4-tray-slider {
   position: relative;
   height: 52vh;
+  width: 100%;
   margin-left: 0;
-  display: flex;
-  justify-content: center;
 }
 
 .v4-tray-img {
@@ -1717,8 +1716,9 @@ body {
 
 .v4-slide.active {
   opacity: 1;
-  position: relative;
-  transform: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Floating stat badges */
