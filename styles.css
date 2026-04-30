@@ -1772,7 +1772,7 @@ body {
 
 .v4-marquee {
   position: absolute;
-  top: 0; left: 0; right: 0;
+  bottom: calc(45vh - var(--nav-h) - 10px); left: 0; right: 0;
   background: rgba(0,0,0,0.75);
   border-top: 1px solid rgba(0,0,0,0.1);
   overflow: hidden;
