@@ -95,3 +95,16 @@ const sectionObserver = new IntersectionObserver((entries) => {
 }, { rootMargin: '-40% 0px -55% 0px' });
 
 sections.forEach(s => sectionObserver.observe(s));
+
+// Align v4-marquee with bottom of benefit cards
+function alignMarqueeToCards() {
+  const cards = document.querySelector('.v4-benefits');
+  const marquee = document.querySelector('.v4-marquee');
+  const hero = document.querySelector('.v4-hero');
+  if (!cards || !marquee || !hero) return;
+  const cardsBottom = cards.getBoundingClientRect().bottom - hero.getBoundingClientRect().top;
+  marquee.style.top = cardsBottom + 'px';
+  marquee.style.bottom = 'auto';
+}
+window.addEventListener('load', alignMarqueeToCards);
+window.addEventListener('resize', alignMarqueeToCards);
