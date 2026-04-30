@@ -1353,6 +1353,7 @@ body {
 
 /* Override base hero for V4 */
 .v4-hero {
+  min-height: 0;
   height: auto;
   background: linear-gradient(160deg, #e8e8e8 0%, #f0f0f0 50%, #dcdcdc 100%);
   display: flex !important;
