@@ -1396,7 +1396,7 @@ body {
   justify-content: flex-start;
   position: relative;
   z-index: 2;
-  padding: calc(var(--nav-h) + 10px) 2% 48px 0;
+  padding: calc(var(--nav-h) + 80px) 2% 48px 0;
   overflow: visible;
 }
 
@@ -1773,7 +1773,7 @@ body {
 
 .v4-marquee {
   position: absolute;
-  top: calc(var(--nav-h) + 33vh + 10px); left: 0; right: 0;
+  top: calc(var(--nav-h) + 33vh + 80px); left: 0; right: 0;
   background: rgba(0,0,0,0.75);
   border-top: 1px solid rgba(0,0,0,0.1);
   overflow: hidden;
