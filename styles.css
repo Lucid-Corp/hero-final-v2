@@ -625,13 +625,7 @@ body {
   gap: 10px;
 }
 
-.ss-eyebrow {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--blue);
-}
+.ss-eyebrow { display: none; }
 
 .ss-card h3 {
   font-size: 24px;
