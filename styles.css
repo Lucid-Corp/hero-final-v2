@@ -1666,7 +1666,7 @@ body {
 .v4-tray-img {
   display: block;
   width: auto;
-  height: 50%;
+  height: 100%;
   max-width: 100%;
   object-fit: contain;
   object-position: left top;
