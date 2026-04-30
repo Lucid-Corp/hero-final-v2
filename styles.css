@@ -582,10 +582,16 @@ body {
 
 .services-track {
   display: flex;
-  gap: 20px;
+  gap: 0;
   animation: ssScroll 28s linear infinite;
   will-change: transform;
   width: max-content;
+}
+
+.ss-set {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
 }
 
 .services-track:hover {

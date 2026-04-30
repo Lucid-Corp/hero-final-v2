@@ -29,11 +29,6 @@ dots.forEach(dot => {
   dot.addEventListener('click', () => goToSlide(Number(dot.dataset.index)));
 });
 
-// Services slider — CSS conveyor belt, clone cards for seamless loop
-const track = document.getElementById('servicesTrack');
-if (track) {
-  Array.from(track.children).forEach(card => track.appendChild(card.cloneNode(true)));
-}
 
 // Scroll reveal
 const revealObserver = new IntersectionObserver((entries) => {
