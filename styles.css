@@ -1568,7 +1568,7 @@ body {
   padding: 14px 16px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   text-align: center;
-  height: 80px;
+  min-height: 80px;
   box-sizing: border-box;
 }
 
@@ -1585,9 +1585,7 @@ body {
   font-size: 11px;
   color: rgba(0,0,0,0.5);
   line-height: 1.4;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
 }
 
 .v4-ben-link {
