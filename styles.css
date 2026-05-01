@@ -1553,7 +1553,7 @@ body {
   gap: 12px;
   opacity: 0;
   animation: fadeUp 0.6s ease forwards 0.5s;
-  width: 100%;
+  width: 50%;
 }
 
 .v4-benefit {
