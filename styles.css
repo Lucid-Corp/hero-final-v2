@@ -1667,13 +1667,13 @@ body {
   position: relative;
   flex: 1;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .v4-tray-slider {
   position: relative;
   height: 42vh;
-  margin-left: -80px;
 }
 
 .v4-tray-img {
