@@ -1387,7 +1387,7 @@ body {
   flex-direction: column;
   align-items: center !important;
   justify-content: flex-start;
-  padding: 0 !important;
+  padding: 0 0 4px !important;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -1567,7 +1567,7 @@ body {
   gap: 16px;
   width: 100%;
   max-width: 1100px;
-  padding: 0 0 40px !important;
+  padding: 4px 0 40px !important;
   opacity: 0;
   animation: fadeUp 0.6s ease forwards 0.6s;
   box-sizing: border-box;
