@@ -1673,16 +1673,16 @@ body {
 
 .v4-tray-slider {
   position: relative;
+  width: 42vh;
   height: 42vh;
 }
 
 .v4-tray-img {
   display: block;
-  width: auto;
+  width: 42vh;
   height: 42vh;
-  max-width: 100%;
   object-fit: contain;
-  object-position: left top;
+  object-position: center;
 }
 
 .v4-slide {
@@ -1694,7 +1694,6 @@ body {
 
 .v4-slide.active {
   opacity: 1;
-  position: relative;
 }
 
 /* Floating stat badges */
